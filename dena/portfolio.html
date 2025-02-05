@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width,initial-scale=1.0"/>
+    <title>Mi sitio CV</title>
+    <link href="Css/css-gg.css" rel="stylesheet"/> <!--Todos los estilos-->
+
+    <link rel="shortcut icon" href="Resources/media/images/logo.svg" type="image/svg">
+    <link rel="stylesheet" href="Css/site.css">
+    <!-- <link rel="stylesheet" href="css/site.css"> -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+
+    <script src="JS/site.js"></script>
+</head>
+<body>
+    <div class="main-content">
+        <aside>
+            <div class="profile">
+                <img src="Resources/media/images/gorro.jpg" id="photo-profile" class="my-photo"/>
+                <div>
+                    <h1 class="title">Esaú Aguilar</h1>
+                    <div class="badge-profile">UX/UI Designer</div>
+                    <div class="social">
+                    </div>
+                </div>
+         
+            <div class="info">
+            <ul class="contacts-block">
+                <li class="contacts-block-item"><i class="gg-calendar"></i>&nbsp;&nbsp;04 de Febrero del 2025</li>
+                        <li class="contacts-block-item"><i class="gg-pin"></i>&nbsp;&nbsp;Puebla, Puebla</li>
+                        <li class="contacts-block-item"><i class="gg-mail"></i><a href="aguilarnegrete2000@gmail.com">&nbsp;&nbsp;aguilarnegrete2000@gmail.com</a></li>
+                        <li class="contacts-block-item"><i class="gg-phone"></i>&nbsp;&nbsp;+1 221 1310 600</li>
+                    </ul>
+
+                    
+                    <a class="btn" href="Resources/media/docs/Daniel.pdf">Descargar CV</a>
+
+
+                </div>
+            </div>
+        </aside>
+        <section class="resume">
+            <header>
+                <div class="menu-circle">
+                    <i class="gg-menu-oreos" onclick="toggleMenu()"></i>
+                </div>
+                <div class="inner-menu js-menu">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="index.html">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="portfolio.html">Portafolio</a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            
+            <h2 class="title bordered">Portafolio</h2>
+
+            <div class="portfolio">
+                <img src="./Resources/media/images/cc.png" onclick="showImage(this)">
+                <img src="./Resources/media/images/cisco.png" onclick="showImage(this)">
+
+                
+                
+                <div class="modal" id="preview">
+                    <button onclick="cerrarModal()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 25 25"  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6L6 18M6 6l12 12"></path>
+                          </svg>
+                    </button>
+                </div>
+            </div>
+            
+        </section>
+    </div>
+    <footer>Autor: Daniel Esaú Negrete Aguilar</footer>
+</body>
+</html>
